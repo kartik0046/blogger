@@ -14,3 +14,5 @@ from django.core.asgi import get_asgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'quora.settings')
 
 application = get_asgi_application()
+from some_asgi_library import AmazingMiddleware
+application = AmazingMiddleware(application)
